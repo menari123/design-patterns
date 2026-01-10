@@ -15,8 +15,3 @@ Explorar e documentar os principais padrões de design utilizados no desenvolvim
 ## Como usar
 
 Cada pasta contém exemplos comentados de implementação dos padrões.
-
-## Recursos
-
-- [Refactoring Guru - Design Patterns](https://refactoring.guru/design-patterns)
-- [Gang of Four - Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
