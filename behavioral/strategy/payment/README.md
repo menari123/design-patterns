@@ -26,6 +26,7 @@ src/
 └── index.ts                      # Exemplo de uso
 ```
 
+### Diagrama de Classe
 ![Diagrama de classe](./Strategy-Pattern-Payment.drawio.png)
 
 ## Como usar
