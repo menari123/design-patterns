@@ -10,7 +10,7 @@ export class PixPayment implements PaymentStrategy {
     console.log(`   Transação realizada instantaneamente!`);
   }
 
-  processRefund(amount: number): void {
+  refund(amount: number): void {
     console.log(`\nDevolução via Pix`);
     console.log(`   Valor: R$ ${amount.toFixed(2)}`);
     console.log(`   Devolução realizada instantaneamente!`);

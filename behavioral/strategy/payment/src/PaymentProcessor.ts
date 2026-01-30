@@ -5,7 +5,7 @@ export class PaymentProcessor {
   private paymentHistory: Array<{ amount: number; date: Date; method: string }> = [];
   private refoundHistory: Array<{ amount: number; date: Date; method: string }> = [];
 
-  setPaymentMethod(strategy: PaymentStrategy): void {
+  setPaymentStrategy(strategy: PaymentStrategy): void {
     this.paymentMethod = strategy;
   }
 
@@ -46,7 +46,7 @@ export class PaymentProcessor {
     }
 
     try {
-      this.paymentMethod.processRefund(amount);
+      this.paymentMethod.refund(amount);
       this.refoundHistory.push({
         amount,
         date: new Date(),

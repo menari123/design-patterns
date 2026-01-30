@@ -9,7 +9,7 @@ export class BitcoinPayment implements PaymentStrategy {
         console.log(`   Valor: R$ ${amount.toFixed(2)}`);
     }
 
-    processRefund(amount: number): void {
+    refund(amount: number): void {
         console.log(`\nReembolso em Bitcoin`);
         console.log(`   Endereço da Carteira: ${this.walletAddress}`);
         console.log(`   Valor: R$ ${amount.toFixed(2)}`);

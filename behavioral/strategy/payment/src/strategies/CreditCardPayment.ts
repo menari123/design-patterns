@@ -16,7 +16,7 @@ export class CreditCardPayment implements PaymentStrategy {
     console.log(`   Pagamento processado com sucesso!`);
   }
 
-  processRefund(amount: number): void {
+  refund(amount: number): void {
     console.log(`\nReembolso no Cartão de Crédito`);
     console.log(`   Valor: R$ ${amount.toFixed(2)}`);
     console.log(`   Reembolso processado! Será creditado em 3-5 dias úteis`);

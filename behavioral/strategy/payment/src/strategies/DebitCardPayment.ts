@@ -16,7 +16,7 @@ export class DebitCardPayment implements PaymentStrategy {
     console.log(`   Pagamento debitado instantaneamente!`);
   }
 
-  processRefund(amount: number): void {
+  refund(amount: number): void {
     console.log(`\nReembolso em Cartão de Débito`);
     console.log(`   Valor: R$ ${amount.toFixed(2)}`);
     console.log(`   Reembolso iniciado! Será creditado em 1-2 dias úteis`);

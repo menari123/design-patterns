@@ -9,6 +9,7 @@ O padrão Strategy é um padrão de design comportamental que:
 - Encapsula cada um deles
 - Torna-os intercambiáveis
 - Permite que o algoritmo varie independentemente dos clientes que o utilizam
+- Princípio Aberto-Fechado - Novos comportamentos são adicionados sem a necessidade de modificação no código existente
 
 ## Estrutura do Projeto
 
@@ -24,6 +25,8 @@ src/
 ├── PaymentProcessor.ts           # Processador de pagamentos (Aplica as diferentes estratégias)
 └── index.ts                      # Exemplo de uso
 ```
+
+![Diagrama de classe](./Strategy-Pattern-Payment.drawio.png)
 
 ## Como usar
 
@@ -61,7 +64,7 @@ import { CreditCardPayment } from './strategies';
 const processor = new PaymentProcessor();
 
 // Definir estratégia de pagamento
-processor.setPaymentMethod(
+processor.setPaymentStrategy(
   new CreditCardPayment('4111 1111 1111 1111', 'João Silva', '12/25', '123')
 );
 
